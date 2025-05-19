@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Probability {
     private final double chance;
 
-    public Probability(double chance) {
+    private Probability(double chance) {
         this.chance = chance;
     }
 

@@ -6,20 +6,28 @@ class ProbabilityTest {
     @Test
     void testTailsChance() {
         assertThrows(Exception.class, () -> Probability.init(1.2));
+        assertThrows(Exception.class, () -> Probability.init(-1.2));
     }
 
     @Test
     void testNoTailsChance() {
-        Probability probability = new Probability(0.5);
-
-        assertEquals(probability, probability.complement());
+        try {
+            Probability tail = Probability.init(0.5);
+            assertEquals(tail, tail.complement());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Test
     void testAndChance() {
-        Probability probability1 = new Probability(0.5);
-        Probability probability2 = new Probability(0.5);
+        try {
+            Probability coin1Tail = Probability.init(0.5);
+            Probability coin2Tail = Probability.init(0.5);
 
-        assertEquals(new Probability(0.25), probability1.and(probability2));
+            assertEquals(Probability.init(0.25), coin1Tail.and(coin2Tail));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
