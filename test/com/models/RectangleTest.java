@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RectangleTest {
     @Test
-    void areaTest() {
+    void testRectangleArea() {
         Rectangle rectangle = new Rectangle(1, 2);
         assertEquals(2, rectangle.area());
 
@@ -15,7 +15,7 @@ class RectangleTest {
     }
 
     @Test
-    void perimeterTest() {
+    void testRectanglePerimeter() {
         Rectangle rectangle = new Rectangle(1, 2);
         assertEquals(6, rectangle.perimeter());
 

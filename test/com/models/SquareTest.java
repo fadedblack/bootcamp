@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SquareTest {
 
     @Test
-    void areaTest() {
+    void testSquareArea() {
         Square square = new Square(4);
         assertEquals(16, square.area());
 
@@ -16,7 +16,7 @@ class SquareTest {
     }
 
     @Test
-    void perimeterTest(){
+    void testSquarePerimeter(){
         Square square = new Square(4);
         assertEquals(16,square.perimeter());
 

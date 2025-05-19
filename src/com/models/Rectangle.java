@@ -1,6 +1,6 @@
 package com.models;
 
-public class Rectangle implements Shape {
+public class Rectangle implements BoundRegion {
     private final int length;
     private final int breadth;
 

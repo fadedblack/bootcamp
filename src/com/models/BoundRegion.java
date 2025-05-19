@@ -1,6 +1,6 @@
 package com.models;
 
-public interface Shape {
+public interface BoundRegion {
      int perimeter();
     int area();
 }
