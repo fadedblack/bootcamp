@@ -28,12 +28,18 @@ public class Probability {
     }
 
     public Probability complement() {
-         return new Probability(1 - chance);
+        return new Probability(1 - chance);
     }
 
     public Probability and(Probability probability) {
         double andChance = chance * probability.chance;
 
         return new Probability(andChance);
+    }
+
+    public Probability or(Probability probability) {
+        double orChance = this.chance + probability.chance - this.and(probability).chance;
+
+        return new Probability(orChance);
     }
 }
