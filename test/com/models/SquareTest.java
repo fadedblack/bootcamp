@@ -1,5 +1,6 @@
 package com.models;
 
+import com.models.shapes.Square;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
