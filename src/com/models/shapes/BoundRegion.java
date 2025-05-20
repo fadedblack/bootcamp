@@ -1,4 +1,4 @@
-package com.models;
+package com.models.shapes;
 
 public interface BoundRegion {
      int perimeter();

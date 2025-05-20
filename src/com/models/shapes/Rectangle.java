@@ -1,4 +1,4 @@
-package com.models;
+package com.models.shapes;
 
 public class Rectangle implements BoundRegion {
     private final int length;

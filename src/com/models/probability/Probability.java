@@ -1,3 +1,5 @@
+package com.models.probability;
+
 import java.util.Objects;
 
 public class Probability {
