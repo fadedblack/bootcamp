@@ -19,6 +19,10 @@ public class Length {
         return new Length(inch * 25.4, "inch");
     }
 
+    public static Length fromCM(double cm) {
+        return new Length(cm * 10, "cm");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
